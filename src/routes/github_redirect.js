@@ -6,8 +6,8 @@ export async function get(req, res, next) {
         const response = await axios.post(
             GITHUB_TOKEN_URL,
             {
-                client_id: process.env.CLIENT_ID,
-                client_secret: process.env.CLIENT_SECRET,
+                client_id: process.env.client_id,
+                client_secret: process.env.client_secret,
                 code: codeToSend
             },
             {
